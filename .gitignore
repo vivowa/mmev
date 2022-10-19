@@ -2,3 +2,5 @@
 *.ipynb_checkpoints
 
 txn.csv
+
+key.txt
