@@ -28,10 +28,10 @@ txn = create_transactions(raw)
 
 df_txn = pd.DataFrame.from_dict(txn)
 
-df_txn.to_csv('/Users/viking/Documents/github/mev/txn.csv', mode='a', index=False, header=False)
+df_txn.to_csv('/Users/viking/Documents/github/mmev/txn.csv', mode='a', index=False, header=False)
 
 df_raw.drop(columns=['transactions'], inplace=True)
-df_raw.to_csv('/Users/viking/Documents/github/mev/blocks.csv', mode='a', index=False, header=False)
+df_raw.to_csv('/Users/viking/Documents/github/mmev/blocks.csv', mode='a', index=False, header=False)
 
 current_time = now.strftime("%H:%M:%S")
 print(current_time)
